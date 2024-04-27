@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import MyNavBar from "./components/MyNavBar";
 import MoviesGallery from "./components/MoviesGallery";
 import MyFooter from "./components/MyFooter";
+// import Profile from "./components/ProfilePage";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         <MoviesGallery title="The Lord Of The Rings Gallery" searchTitle="The Lord Of The Rings" />
         <MoviesGallery title="Pirates of the Caribbean Gallery" searchTitle="Pirates of the Caribbean" />
       </div>
+      {/* <div className="profile-container">
+        <Profile />
+      </div> */}
       <div className="footer">
         <MyFooter />
       </div>
