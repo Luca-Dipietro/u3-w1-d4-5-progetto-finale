@@ -24,9 +24,9 @@ const Profile = () => {
                   <Dropdown.Toggle variant="black" className="text-light border dropdown-toggle active px-3">
                     Italian
                   </Dropdown.Toggle>
-                  <Dropdown.Menu>
-                    <Dropdown.Item href="#">English</Dropdown.Item>
-                    <Dropdown.Item href="#">Spanish</Dropdown.Item>
+                  <Dropdown.Menu data-bs-theme="dark">
+                    <Dropdown.Item href="/">English</Dropdown.Item>
+                    <Dropdown.Item href="/">Spanish</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
                 <hr className="text-light mt-3 mb-3" />

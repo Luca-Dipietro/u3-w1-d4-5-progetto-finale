@@ -13,12 +13,12 @@ const Header = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu data-bs-theme="dark">
-                <Dropdown.Item href="#">Action</Dropdown.Item>
-                <Dropdown.Item href="#">Adventure</Dropdown.Item>
-                <Dropdown.Item href="#">Anime</Dropdown.Item>
-                <Dropdown.Item href="#">Comedy</Dropdown.Item>
-                <Dropdown.Item href="#">Documentary</Dropdown.Item>
-                <Dropdown.Item href="#">Fantasy</Dropdown.Item>
+                <Dropdown.Item href="/">Action</Dropdown.Item>
+                <Dropdown.Item href="/">Adventure</Dropdown.Item>
+                <Dropdown.Item href="/">Anime</Dropdown.Item>
+                <Dropdown.Item href="/">Comedy</Dropdown.Item>
+                <Dropdown.Item href="/">Documentary</Dropdown.Item>
+                <Dropdown.Item href="/">Fantasy</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </div>

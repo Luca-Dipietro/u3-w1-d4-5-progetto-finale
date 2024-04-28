@@ -37,9 +37,9 @@ class MoviesGallery extends Component {
     const settings = {
       dots: true,
       infinite: true,
+      swipeToSlide: true,
       centerMode: true,
       centerPadding: "80px",
-      swipeToSlide: true,
       speed: 500,
       slidesToShow: 6,
       slidesToScroll: 1,
@@ -103,21 +103,23 @@ class MoviesGallery extends Component {
     };
     return (
       <Container fluid className="mb-3">
-        <div className="d-flex justify-content-between align-items-center mb-3">
+        <div className="d-flex align-items-center mb-3">
           <h4 className="text-light mb-0">{this.props.title}</h4>
-          {this.state.isLoading && <Spinner animation="border" variant="primary" />}
+          {this.state.isLoading && <Spinner animation="border" variant="primary" className="ms-3" />}
         </div>
         {this.state.isError && <Alert variant="danger">Failed to fetch movies</Alert>}
-        <div className="slide-container">
-          <Slider {...settings}>
-            {this.state.movies.map((movie) => (
-              <Col key={movie.imdbID}>
-                <div className="d-flex justify-content-center">
-                  <img src={movie.Poster} alt={`Poster of ${movie.Title}`} />
-                </div>
-              </Col>
-            ))}
-          </Slider>
+        <div className="slider-container">
+          {!this.state.isError && (
+            <Slider {...settings}>
+              {this.state.movies.map((movie) => (
+                <Col key={movie.imdbID}>
+                  <div className="d-flex justify-content-center">
+                    <img src={movie.Poster} alt={`Poster of ${movie.Title}`} />
+                  </div>
+                </Col>
+              ))}
+            </Slider>
+          )}
         </div>
       </Container>
     );

@@ -22,7 +22,7 @@ function App() {
         <MoviesGallery title="The Lord Of The Rings Gallery" searchTitle="The Lord Of The Rings" />
         <MoviesGallery title="Pirates of the Caribbean Gallery" searchTitle="Pirates of the Caribbean" />
       </div>
-      {/* <div className="profile-container">
+      {/* {/* <div className="profile-container">
         <Profile />
       </div> */}
       <div className="footer">
